@@ -62,17 +62,18 @@ class LoginAPIView(generics.CreateAPIView):
         serializers = self.get_serializer(data=request.data)
         serializers.is_valid(raise_exception=True)
 
-        student_email = serializers.validated_data['student_email']
+        Student_email = serializers.validated_data['Student_email']
         password = serializers.validated_data['password']
+
         try:
-            student = Student.objects.get(student_email=student_email)
+            student = Student.objects.get(Student_email=Student_email)
         except Student.DoesNotExist:
-            return Response({'error': 'invalid email or password.'}, status=400)
+            return Response({'error': 'Invalid Email.'}, status=400)
         if not check_password(password, student.password):
-            return Response({'error': 'invalid email or password.'}, status=400)
+            return Response({'error': 'Invalid Password.'}, status=400)
         refresh = RefreshToken.for_user(student)
         response_data = {
-            'email': student_email,
-            'access': str(refresh.access_token),
+            'email': Student_email,
+            'access_token': str(refresh.access_token),
         }
         return Response(response_data)
