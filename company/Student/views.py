@@ -61,7 +61,6 @@ class LoginAPIView(generics.CreateAPIView):
     def post(self, request):
         serializers = self.get_serializer(data=request.data)
         serializers.is_valid(raise_exception=True)
-
         Student_email = serializers.validated_data['Student_email']
         password = serializers.validated_data['password']
 
