@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'emp',
     'rest_framework',
     'Student',
-    'Mobile'
+    'Mobile',
+    'Earphone'
 ]
 
 MIDDLEWARE = [
