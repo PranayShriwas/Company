@@ -6,5 +6,6 @@ urlpatterns = [
     path('', include('emp.urls')),
     path('student/', include('Student.urls')),
     path('mobile/', include('Mobile.urls')),
-    path('ear/', include('Earphone.urls'))
+    path('ear/', include('Earphone.urls')),
+    path('intro/', include('intro.urls'))
 ]
