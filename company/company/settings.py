@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'Student',
     'Mobile',
     'Earphone',
-    'intro'
+    'intro',
+    'bag'
 ]
 
 MIDDLEWARE = [

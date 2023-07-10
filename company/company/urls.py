@@ -7,5 +7,6 @@ urlpatterns = [
     path('student/', include('Student.urls')),
     path('mobile/', include('Mobile.urls')),
     path('ear/', include('Earphone.urls')),
-    path('intro/', include('intro.urls'))
+    path('intro/', include('intro.urls')),
+    path('bag/', include('bag.urls'))
 ]
