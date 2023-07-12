@@ -1,7 +1,8 @@
-from .models import *
 from rest_framework import serializers
+from .models import Bag
 
 
 class BagSerializer(serializers.ModelSerializer):
-    model = Bag
-    fields = '__all__'
+    class Meta:
+        model = Bag
+        fields = '__all__'

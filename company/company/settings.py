@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'Mobile',
     'Earphone',
     'intro',
-    'bag'
+    'bag',
 ]
 
 MIDDLEWARE = [
