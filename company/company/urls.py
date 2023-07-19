@@ -8,5 +8,6 @@ urlpatterns = [
     path('mobile/', include('Mobile.urls')),
     path('ear/', include('Earphone.urls')),
     path('intro/', include('intro.urls')),
-    path('bag/', include('bag.urls'))
+    path('bag/', include('bag.urls')),
+    path('git/', include('gitt.urls'))
 ]

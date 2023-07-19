@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'Earphone',
     'intro',
     'bag',
+    'gitt'
 ]
 
 MIDDLEWARE = [
